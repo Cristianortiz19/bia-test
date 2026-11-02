@@ -1,97 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1500" viewBox="0 0 1440 1500"><rect width="1440" height="1500" fill="#F7F6F1"/>
-<text x="80" y="110" font-family="Instrument Serif" font-size="64" fill="#0E1116">Foundations</text>
-<text x="80" y="150" font-family="Geist Mono" font-size="14" fill="#677084">BIA · OLIBIA — tokens compartidos (espejo de src/styles/tokens.css)</text>
-<text x="80" y="230" font-family="Geist" font-weight="600" font-size="20" fill="#0E1116">Color</text>
-<rect x="80" y="260" width="168" height="110" rx="14" fill="#0E1116" stroke="#E4E4DD"/>
-<text x="80" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ink-950</text>
-<text x="80" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#0E1116</text>
-<text x="80" y="434" font-family="Geist" font-size="11" fill="#677084">Estructura · acción principal</text>
-<rect x="264" y="260" width="168" height="110" rx="14" fill="#343C4A" stroke="#E4E4DD"/>
-<text x="264" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ink-700</text>
-<text x="264" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#343C4A</text>
-<text x="264" y="434" font-family="Geist" font-size="11" fill="#677084">Texto secundario</text>
-<rect x="448" y="260" width="168" height="110" rx="14" fill="#677084" stroke="#E4E4DD"/>
-<text x="448" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ink-500</text>
-<text x="448" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#677084</text>
-<text x="448" y="434" font-family="Geist" font-size="11" fill="#677084">Texto terciario</text>
-<rect x="632" y="260" width="168" height="110" rx="14" fill="#DCDFE6" stroke="#E4E4DD"/>
-<text x="632" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ink-200</text>
-<text x="632" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#DCDFE6</text>
-<text x="632" y="434" font-family="Geist" font-size="11" fill="#677084">Bordes · barras pasadas</text>
-<rect x="816" y="260" width="168" height="110" rx="14" fill="#ECEEE9" stroke="#E4E4DD"/>
-<text x="816" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ink-100</text>
-<text x="816" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#ECEEE9</text>
-<text x="816" y="434" font-family="Geist" font-size="11" fill="#677084">Tracks</text>
-<rect x="1000" y="260" width="168" height="110" rx="14" fill="#F7F6F1" stroke="#E4E4DD"/>
-<text x="1000" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">paper-50</text>
-<text x="1000" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#F7F6F1</text>
-<text x="1000" y="434" font-family="Geist" font-size="11" fill="#677084">Fondo</text>
-<rect x="1184" y="260" width="168" height="110" rx="14" fill="#C8F560" stroke="#E4E4DD"/>
-<text x="1184" y="396" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">volt-500</text>
-<text x="1184" y="416" font-family="Geist Mono" font-size="12" fill="#677084">#C8F560</text>
-<text x="1184" y="434" font-family="Geist" font-size="11" fill="#677084">Energía · activo</text>
-<rect x="80" y="460" width="168" height="110" rx="14" fill="#5D7A12" stroke="#E4E4DD"/>
-<text x="80" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">volt-700</text>
-<text x="80" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#5D7A12</text>
-<text x="80" y="634" font-family="Geist" font-size="11" fill="#677084">Texto sobre volt-100</text>
-<rect x="264" y="460" width="168" height="110" rx="14" fill="#EFFBD2" stroke="#E4E4DD"/>
-<text x="264" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">volt-100</text>
-<text x="264" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#EFFBD2</text>
-<text x="264" y="634" font-family="Geist" font-size="11" fill="#677084">Fondo positivo</text>
-<rect x="448" y="460" width="168" height="110" rx="14" fill="#7B6CF6" stroke="#E4E4DD"/>
-<text x="448" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">iris-500</text>
-<text x="448" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#7B6CF6</text>
-<text x="448" y="634" font-family="Geist" font-size="11" fill="#677084">AI · foco</text>
-<rect x="632" y="460" width="168" height="110" rx="14" fill="#ECEBFF" stroke="#E4E4DD"/>
-<text x="632" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">iris-100</text>
-<text x="632" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#ECEBFF</text>
-<text x="632" y="634" font-family="Geist" font-size="11" fill="#677084">Fondo AI</text>
-<rect x="816" y="460" width="168" height="110" rx="14" fill="#FF7A45" stroke="#E4E4DD"/>
-<text x="816" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ember-500</text>
-<text x="816" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#FF7A45</text>
-<text x="816" y="634" font-family="Geist" font-size="11" fill="#677084">Anomalía</text>
-<rect x="1000" y="460" width="168" height="110" rx="14" fill="#FFEADF" stroke="#E4E4DD"/>
-<text x="1000" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">ember-100</text>
-<text x="1000" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#FFEADF</text>
-<text x="1000" y="634" font-family="Geist" font-size="11" fill="#677084">Fondo alerta</text>
-<rect x="1184" y="460" width="168" height="110" rx="14" fill="#4AA8FF" stroke="#E4E4DD"/>
-<text x="1184" y="596" font-family="Geist" font-weight="600" font-size="14" fill="#0E1116">sky-500</text>
-<text x="1184" y="616" font-family="Geist Mono" font-size="12" fill="#677084">#4AA8FF</text>
-<text x="1184" y="634" font-family="Geist" font-size="11" fill="#677084">Inbound</text>
-<text x="80" y="700" font-family="Geist" font-weight="600" font-size="20" fill="#0E1116">Tipografía</text>
-<text x="80" y="780" font-family="Instrument Serif" font-size="64" fill="#0E1116">Display · Instrument Serif</text>
-<text x="80" y="830" font-family="Geist" font-weight="600" font-size="28" fill="#0E1116">UI · Geist 600 / 500 / 400</text>
-<text x="80" y="870" font-family="Geist Mono" font-size="14" fill="#677084">ETIQUETAS · GEIST MONO · 11–14</text>
-<text x="80" y="950" font-family="Geist" font-size="11" fill="#0E1116">Aa</text><text x="80" y="975" font-family="Geist Mono" font-size="11" fill="#677084">11</text>
-<text x="120" y="950" font-family="Geist" font-size="12" fill="#0E1116">Aa</text><text x="120" y="975" font-family="Geist Mono" font-size="11" fill="#677084">12</text>
-<text x="160" y="950" font-family="Geist" font-size="13" fill="#0E1116">Aa</text><text x="160" y="975" font-family="Geist Mono" font-size="11" fill="#677084">13</text>
-<text x="200" y="950" font-family="Geist" font-size="14" fill="#0E1116">Aa</text><text x="200" y="975" font-family="Geist Mono" font-size="11" fill="#677084">14</text>
-<text x="240" y="950" font-family="Geist" font-size="16" fill="#0E1116">Aa</text><text x="240" y="975" font-family="Geist Mono" font-size="11" fill="#677084">16</text>
-<text x="281.6" y="950" font-family="Geist" font-size="18" fill="#0E1116">Aa</text><text x="281.6" y="975" font-family="Geist Mono" font-size="11" fill="#677084">18</text>
-<text x="326.40000000000003" y="950" font-family="Geist" font-size="22" fill="#0E1116">Aa</text><text x="326.40000000000003" y="975" font-family="Geist Mono" font-size="11" fill="#677084">22</text>
-<text x="377.6" y="950" font-family="Geist" font-size="28" fill="#0E1116">Aa</text><text x="377.6" y="975" font-family="Geist Mono" font-size="11" fill="#677084">28</text>
-<text x="438.40000000000003" y="950" font-family="Geist" font-size="36" fill="#0E1116">Aa</text><text x="438.40000000000003" y="975" font-family="Geist Mono" font-size="11" fill="#677084">36</text>
-<text x="512.0" y="950" font-family="Geist" font-size="48" fill="#0E1116">Aa</text><text x="512.0" y="975" font-family="Geist Mono" font-size="11" fill="#677084">48</text>
-<text x="80" y="1060" font-family="Geist" font-weight="600" font-size="20" fill="#0E1116">Espacio (base 4)</text>
-<rect x="80" y="1090" width="4" height="4" fill="#7B6CF6" rx="2"/><text x="80" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">4</text>
-<rect x="114" y="1090" width="8" height="8" fill="#7B6CF6" rx="2"/><text x="114" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">8</text>
-<rect x="152" y="1090" width="12" height="12" fill="#7B6CF6" rx="2"/><text x="152" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">12</text>
-<rect x="194" y="1090" width="16" height="16" fill="#7B6CF6" rx="2"/><text x="194" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">16</text>
-<rect x="240" y="1090" width="20" height="20" fill="#7B6CF6" rx="2"/><text x="240" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">20</text>
-<rect x="290" y="1090" width="24" height="24" fill="#7B6CF6" rx="2"/><text x="290" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">24</text>
-<rect x="344" y="1090" width="32" height="32" fill="#7B6CF6" rx="2"/><text x="344" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">32</text>
-<rect x="406" y="1090" width="40" height="40" fill="#7B6CF6" rx="2"/><text x="406" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">40</text>
-<rect x="476" y="1090" width="48" height="48" fill="#7B6CF6" rx="2"/><text x="476" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">48</text>
-<rect x="554" y="1090" width="64" height="64" fill="#7B6CF6" rx="2"/><text x="554" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">64</text>
-<text x="760" y="1060" font-family="Geist" font-weight="600" font-size="20" fill="#0E1116">Radios</text>
-<rect x="760" y="1090" width="80" height="64" rx="6" fill="#FFFFFF" stroke="#0E1116"/><text x="760" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">r 6</text>
-<rect x="860" y="1090" width="80" height="64" rx="10" fill="#FFFFFF" stroke="#0E1116"/><text x="860" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">r 10</text>
-<rect x="960" y="1090" width="80" height="64" rx="14" fill="#FFFFFF" stroke="#0E1116"/><text x="960" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">r 14</text>
-<rect x="1060" y="1090" width="80" height="64" rx="20" fill="#FFFFFF" stroke="#0E1116"/><text x="1060" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">r 20</text>
-<rect x="1160" y="1090" width="80" height="64" rx="28" fill="#FFFFFF" stroke="#0E1116"/><text x="1160" y="1180" font-family="Geist Mono" font-size="11" fill="#677084">r 28</text>
-<text x="80" y="1260" font-family="Geist" font-weight="600" font-size="20" fill="#0E1116">Movimiento</text>
-<rect x="80" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E4E4DD"/><text x="100" y="1320" font-family="Geist" font-weight="600" font-size="16" fill="#0E1116">fast · 120 ms</text><text x="100" y="1348" font-family="Geist" font-size="12" fill="#677084">hover, color</text>
-<rect x="380" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E4E4DD"/><text x="400" y="1320" font-family="Geist" font-weight="600" font-size="16" fill="#0E1116">base · 220 ms</text><text x="400" y="1348" font-family="Geist" font-size="12" fill="#677084">estado, chips, segmented</text>
-<rect x="680" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E4E4DD"/><text x="700" y="1320" font-family="Geist" font-weight="600" font-size="16" fill="#0E1116">slow · 420 ms</text><text x="700" y="1348" font-family="Geist" font-size="12" fill="#677084">entradas, drawer, gráficas</text>
-<text x="80" y="1420" font-family="Geist Mono" font-size="12" fill="#677084">ease-out cubic-bezier(.22,1,.36,1) · spring cubic-bezier(.34,1.56,.64,1) · prefers-reduced-motion → 0 ms</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1500" viewBox="0 0 1440 1500"><rect width="1440" height="1500" fill="#F6F7F9"/>
+<text x="80" y="110" font-family="Inter" font-weight="600" font-size="64" fill="#05070B">Foundations</text>
+<text x="80" y="150" font-family="Geist Mono" font-size="14" fill="#6B7280">BIA · OLIBIA — tokens compartidos · paleta de bia.app (espejo de src/styles/tokens.css)</text>
+<text x="80" y="230" font-family="Inter" font-weight="600" font-size="20" fill="#05070B">Color</text>
+<rect x="80" y="260" width="168" height="110" rx="14" fill="#05070B" stroke="#E6E8EC"/>
+<text x="80" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">ink-950</text>
+<text x="80" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#05070B</text>
+<text x="80" y="434" font-family="Inter" font-size="11" fill="#6B7280">Estructura · acción principal</text>
+<rect x="264" y="260" width="168" height="110" rx="14" fill="#374151" stroke="#E6E8EC"/>
+<text x="264" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">ink-700</text>
+<text x="264" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#374151</text>
+<text x="264" y="434" font-family="Inter" font-size="11" fill="#6B7280">Texto secundario</text>
+<rect x="448" y="260" width="168" height="110" rx="14" fill="#6B7280" stroke="#E6E8EC"/>
+<text x="448" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">ink-500</text>
+<text x="448" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#6B7280</text>
+<text x="448" y="434" font-family="Inter" font-size="11" fill="#6B7280">Texto terciario</text>
+<rect x="632" y="260" width="168" height="110" rx="14" fill="#E5E7EB" stroke="#E6E8EC"/>
+<text x="632" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">ink-200</text>
+<text x="632" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#E5E7EB</text>
+<text x="632" y="434" font-family="Inter" font-size="11" fill="#6B7280">Bordes · barras pasadas</text>
+<rect x="816" y="260" width="168" height="110" rx="14" fill="#F1F2F4" stroke="#E6E8EC"/>
+<text x="816" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">ink-100</text>
+<text x="816" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#F1F2F4</text>
+<text x="816" y="434" font-family="Inter" font-size="11" fill="#6B7280">Tracks</text>
+<rect x="1000" y="260" width="168" height="110" rx="14" fill="#F6F7F9" stroke="#E6E8EC"/>
+<text x="1000" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">paper-50</text>
+<text x="1000" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#F6F7F9</text>
+<text x="1000" y="434" font-family="Inter" font-size="11" fill="#6B7280">Fondo</text>
+<rect x="1184" y="260" width="168" height="110" rx="14" fill="#08DDBC" stroke="#E6E8EC"/>
+<text x="1184" y="396" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">mint-500</text>
+<text x="1184" y="416" font-family="Geist Mono" font-size="12" fill="#6B7280">#08DDBC</text>
+<text x="1184" y="434" font-family="Inter" font-size="11" fill="#6B7280">Energía · activo</text>
+<rect x="80" y="460" width="168" height="110" rx="14" fill="#04776A" stroke="#E6E8EC"/>
+<text x="80" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">mint-700</text>
+<text x="80" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#04776A</text>
+<text x="80" y="634" font-family="Inter" font-size="11" fill="#6B7280">Texto sobre mint-100</text>
+<rect x="264" y="460" width="168" height="110" rx="14" fill="#D6F9F2" stroke="#E6E8EC"/>
+<text x="264" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">mint-100</text>
+<text x="264" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#D6F9F2</text>
+<text x="264" y="634" font-family="Inter" font-size="11" fill="#6B7280">Fondo positivo</text>
+<rect x="448" y="460" width="168" height="110" rx="14" fill="#8B5CF6" stroke="#E6E8EC"/>
+<text x="448" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">violet-500</text>
+<text x="448" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#8B5CF6</text>
+<text x="448" y="634" font-family="Inter" font-size="11" fill="#6B7280">AI · foco</text>
+<rect x="632" y="460" width="168" height="110" rx="14" fill="#EFE9FE" stroke="#E6E8EC"/>
+<text x="632" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">violet-100</text>
+<text x="632" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#EFE9FE</text>
+<text x="632" y="634" font-family="Inter" font-size="11" fill="#6B7280">Fondo AI</text>
+<rect x="816" y="460" width="168" height="110" rx="14" fill="#F59E0B" stroke="#E6E8EC"/>
+<text x="816" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">amber-500</text>
+<text x="816" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#F59E0B</text>
+<text x="816" y="634" font-family="Inter" font-size="11" fill="#6B7280">Anomalía</text>
+<rect x="1000" y="460" width="168" height="110" rx="14" fill="#FEF3C7" stroke="#E6E8EC"/>
+<text x="1000" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">amber-100</text>
+<text x="1000" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#FEF3C7</text>
+<text x="1000" y="634" font-family="Inter" font-size="11" fill="#6B7280">Fondo alerta</text>
+<rect x="1184" y="460" width="168" height="110" rx="14" fill="#2B5BFF" stroke="#E6E8EC"/>
+<text x="1184" y="596" font-family="Inter" font-weight="600" font-size="14" fill="#05070B">electric-500</text>
+<text x="1184" y="616" font-family="Geist Mono" font-size="12" fill="#6B7280">#2B5BFF</text>
+<text x="1184" y="634" font-family="Inter" font-size="11" fill="#6B7280">Inbound</text>
+<text x="80" y="700" font-family="Inter" font-weight="600" font-size="20" fill="#05070B">Tipografía</text>
+<text x="80" y="780" font-family="Inter" font-weight="600" font-size="64" fill="#05070B">Display · Inter 600, tracking −3,5%</text>
+<text x="80" y="830" font-family="Inter" font-weight="600" font-size="28" fill="#05070B">UI · Inter 600 / 500 / 400</text>
+<text x="80" y="870" font-family="Geist Mono" font-size="14" fill="#6B7280">ETIQUETAS · GEIST MONO · 11–14</text>
+<text x="80" y="950" font-family="Inter" font-size="11" fill="#05070B">Aa</text><text x="80" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">11</text>
+<text x="120" y="950" font-family="Inter" font-size="12" fill="#05070B">Aa</text><text x="120" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">12</text>
+<text x="160" y="950" font-family="Inter" font-size="13" fill="#05070B">Aa</text><text x="160" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">13</text>
+<text x="200" y="950" font-family="Inter" font-size="14" fill="#05070B">Aa</text><text x="200" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">14</text>
+<text x="240" y="950" font-family="Inter" font-size="16" fill="#05070B">Aa</text><text x="240" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">16</text>
+<text x="281.6" y="950" font-family="Inter" font-size="18" fill="#05070B">Aa</text><text x="281.6" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">18</text>
+<text x="326.40000000000003" y="950" font-family="Inter" font-size="22" fill="#05070B">Aa</text><text x="326.40000000000003" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">22</text>
+<text x="377.6" y="950" font-family="Inter" font-size="28" fill="#05070B">Aa</text><text x="377.6" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">28</text>
+<text x="438.40000000000003" y="950" font-family="Inter" font-size="36" fill="#05070B">Aa</text><text x="438.40000000000003" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">36</text>
+<text x="512.0" y="950" font-family="Inter" font-size="48" fill="#05070B">Aa</text><text x="512.0" y="975" font-family="Geist Mono" font-size="11" fill="#6B7280">48</text>
+<text x="80" y="1060" font-family="Inter" font-weight="600" font-size="20" fill="#05070B">Espacio (base 4)</text>
+<rect x="80" y="1090" width="4" height="4" fill="#8B5CF6" rx="2"/><text x="80" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">4</text>
+<rect x="114" y="1090" width="8" height="8" fill="#8B5CF6" rx="2"/><text x="114" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">8</text>
+<rect x="152" y="1090" width="12" height="12" fill="#8B5CF6" rx="2"/><text x="152" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">12</text>
+<rect x="194" y="1090" width="16" height="16" fill="#8B5CF6" rx="2"/><text x="194" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">16</text>
+<rect x="240" y="1090" width="20" height="20" fill="#8B5CF6" rx="2"/><text x="240" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">20</text>
+<rect x="290" y="1090" width="24" height="24" fill="#8B5CF6" rx="2"/><text x="290" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">24</text>
+<rect x="344" y="1090" width="32" height="32" fill="#8B5CF6" rx="2"/><text x="344" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">32</text>
+<rect x="406" y="1090" width="40" height="40" fill="#8B5CF6" rx="2"/><text x="406" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">40</text>
+<rect x="476" y="1090" width="48" height="48" fill="#8B5CF6" rx="2"/><text x="476" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">48</text>
+<rect x="554" y="1090" width="64" height="64" fill="#8B5CF6" rx="2"/><text x="554" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">64</text>
+<text x="760" y="1060" font-family="Inter" font-weight="600" font-size="20" fill="#05070B">Radios</text>
+<rect x="760" y="1090" width="80" height="64" rx="6" fill="#FFFFFF" stroke="#05070B"/><text x="760" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">r 6</text>
+<rect x="860" y="1090" width="80" height="64" rx="10" fill="#FFFFFF" stroke="#05070B"/><text x="860" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">r 10</text>
+<rect x="960" y="1090" width="80" height="64" rx="14" fill="#FFFFFF" stroke="#05070B"/><text x="960" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">r 14</text>
+<rect x="1060" y="1090" width="80" height="64" rx="20" fill="#FFFFFF" stroke="#05070B"/><text x="1060" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">r 20</text>
+<rect x="1160" y="1090" width="80" height="64" rx="28" fill="#FFFFFF" stroke="#05070B"/><text x="1160" y="1180" font-family="Geist Mono" font-size="11" fill="#6B7280">r 28</text>
+<text x="80" y="1260" font-family="Inter" font-weight="600" font-size="20" fill="#05070B">Movimiento</text>
+<rect x="80" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E6E8EC"/><text x="100" y="1320" font-family="Inter" font-weight="600" font-size="16" fill="#05070B">fast · 120 ms</text><text x="100" y="1348" font-family="Inter" font-size="12" fill="#6B7280">hover, color</text>
+<rect x="380" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E6E8EC"/><text x="400" y="1320" font-family="Inter" font-weight="600" font-size="16" fill="#05070B">base · 220 ms</text><text x="400" y="1348" font-family="Inter" font-size="12" fill="#6B7280">estado, chips, segmented</text>
+<rect x="680" y="1284" width="280" height="90" rx="14" fill="#FFFFFF" stroke="#E6E8EC"/><text x="700" y="1320" font-family="Inter" font-weight="600" font-size="16" fill="#05070B">slow · 420 ms</text><text x="700" y="1348" font-family="Inter" font-size="12" fill="#6B7280">entradas, drawer, gráficas</text>
+<text x="80" y="1420" font-family="Geist Mono" font-size="12" fill="#6B7280">ease-out cubic-bezier(.22,1,.36,1) · spring cubic-bezier(.34,1.56,.64,1) · prefers-reduced-motion → 0 ms</text>
 </svg>

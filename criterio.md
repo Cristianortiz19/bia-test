@@ -9,15 +9,15 @@ Las dos experiencias usan los mismos tokens (`src/styles/tokens.css`), pero camb
 | Persona | Director comercial que vuelve todos los días | Dueña de cafeterías, una vez al mes y con prisa |
 | Tarea | Monitorear y actuar | Entender y decidir |
 | Densidad | Alta, escaneable | Baja, narrativa |
-| Tipografía | Geist en la interfaz, serif solo en las cifras clave | Serif editorial en titulares |
-| Expresividad | Contenida: el color marca estado | Mayor: el color cuenta la historia (noche = naranja) |
+| Tipografía | Inter densa; cifras clave grandes con tracking cerrado | Inter en titulares grandes y una cabecera oscura con el brillo azul de la marca |
+| Expresividad | Contenida: el color marca estado | Mayor: el color cuenta la historia (noche = ámbar) |
 
 ## Reglas de color
 
 - **Tinta** (`ink-950`): estructura, la acción principal y el dato del momento actual.
-- **Volt** (`#C8F560`): energía y progreso. Señala lo activo, nunca decora.
-- **Iris**: todo lo que viene de inteligencia (resumen AI, foco, comparaciones).
-- **Ember**: anomalía o algo que requiere atención. Si todo es urgente, nada lo es: solo una sede y solo las horas nocturnas lo llevan.
+- **Menta** (`#08DDBC`, de bia.app): energía y progreso. Señala lo activo, nunca decora.
+- **Violeta** (`#8B5CF6`): todo lo que viene de inteligencia (resumen AI, foco, comparaciones).
+- **Ámbar** (`#F59E0B`): anomalía o algo que requiere atención. Si todo es urgente, nada lo es: solo una sede y solo las horas nocturnas lo llevan.
 
 ## Dónde poner expresividad y dónde calma
 

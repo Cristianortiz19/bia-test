@@ -20,7 +20,7 @@ type SortKey = 'value' | 'company' | 'next' | 'stage';
 type Done = Record<string, number>; // key periodo+id → timestamp
 
 const OWNER_HUE: Record<Owner, string> = {
-  'Ana López': '#7b6cf6', 'Carlos Ruiz': '#4aa8ff', 'Laura Díaz': '#ff7a45', 'Mateo Gil': '#5d7a12',
+  'Ana López': '#8b5cf6', 'Carlos Ruiz': '#2b5bff', 'Laura Díaz': '#f59e0b', 'Mateo Gil': '#04776a',
 };
 const CHANNEL_COLOR: Record<Channel, string> = { Outbound: 'var(--viz-1)', Referidos: 'var(--viz-2)', Inbound: 'var(--viz-3)' };
 
@@ -141,7 +141,7 @@ export function OlibiaApp() {
         <div className="ol-nav__foot">
           <NavItem icon={<IconSettings />} label="Ajustes" collapsed={collapsed} tip={tip.bind} />
           <div className="ol-nav__me">
-            <span className="ol-avatar" style={{ background: '#c8f560', color: '#0e1116' }} aria-hidden>CO</span>
+            <span className="ol-avatar" style={{ background: '#08ddbc', color: '#05070b' }} aria-hidden>CO</span>
             <span className="ol-nav__label"><strong>Cristian Ortiz</strong><small>Director comercial</small></span>
           </div>
           <button className="ol-nav__collapse" onClick={() => setCollapsed(!collapsed)} aria-pressed={collapsed}

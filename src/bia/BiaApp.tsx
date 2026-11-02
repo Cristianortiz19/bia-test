@@ -321,7 +321,7 @@ function Shell({ children, demo, setDemo }: { children: React.ReactNode; demo: D
     <div className="bia">
       <a href="#bia-main" className="skip-link">Saltar al contenido</a>
       <header className="bia-top">
-        <a href="#/" className="bia-logo" aria-label="Volver al inicio de la prueba"><span className="bia-logo__m" aria-hidden />bia</a>
+        <a href="#/" className="bia-logo" aria-label="Volver al inicio de la prueba"><IconBolt size={20} className="bia-logo__m" />Bia</a>
         <span className="bia-top__biz"><span className="bia-top__av" aria-hidden>CL</span>{BUSINESS}<small>3 sedes · Cali</small></span>
       </header>
       <main id="bia-main" className="bia-main">{children}</main>
@@ -390,7 +390,7 @@ function DayChart({ siteId, compare, bind }: { siteId: SiteId; compare: boolean;
               aria-label={`${h}:00, ${v.toFixed(1)} kWh en octubre, ${prev[h].toFixed(1)} en septiembre`}
               {...bind(<><strong>{String(h).padStart(2, '0')}:00 · {open ? 'Abierto' : 'Cerrado'}</strong><br />
                 <span className="muted">Oct {v.toFixed(1)} kWh · Sep {prev[h].toFixed(1)} kWh</span>
-                {Math.abs(d) > 0.05 && <><br /><span style={{ color: d > 0 ? '#ffb393' : '#c8f560' }}>{d > 0 ? '+' : ''}{d.toFixed(1)} kWh por hora</span></>}</>)}>
+                {Math.abs(d) > 0.05 && <><br /><span style={{ color: d > 0 ? '#fcd34d' : '#08ddbc' }}>{d > 0 ? '+' : ''}{d.toFixed(1)} kWh por hora</span></>}</>)}>
               <rect x={xs(h)} y={pt} width={bw} height={ih} className="bia-chart__hit" />
               <rect x={xs(h) + 3} y={y(v)} width={bw - 6} height={pt + ih - y(v)} rx={4} className="bia-chart__bar"
                 style={{ transformOrigin: `0 ${pt + ih}px`, animationDelay: `${h * 14}ms` }} />

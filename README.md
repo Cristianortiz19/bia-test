@@ -52,7 +52,7 @@ Corregí un detalle de datos: el canal se calculaba según la posición de la fi
 
 La persona tiene pocos minutos y no sabe de energía. Por eso **la página empieza con la respuesta, no con un dashboard**: "Tu factura subió $1,2 M porque consumiste más, no porque la energía esté más cara". Debajo, un puente visual (septiembre + consumo extra + precio sin cambio = octubre) demuestra la frase sin pedir que se interprete un gráfico.
 
-Después, el recorrido responde cuatro preguntas en orden: **¿dónde?** (una sede explica el 80% del aumento), **¿cuándo?** (perfil de 24 horas con el horario de cierre sombreado; las barras nocturnas en naranja hacen evidente el problema), **¿por qué?** y **¿qué hago?**. Un índice fijo permite saltar entre ellas y marca la sección activa.
+Después, el recorrido responde cuatro preguntas en orden: **¿dónde?** (una sede explica el 80% del aumento), **¿cuándo?** (perfil de 24 horas con el horario de cierre sombreado; las barras nocturnas en ámbar hacen evidente el problema), **¿por qué?** y **¿qué hago?**. Un índice fijo permite saltar entre ellas y marca la sección activa.
 
 El enunciado pide distinguir hechos de hipótesis, así que lo convertí en un **lenguaje visual**: *Medido* es una etiqueta sólida y *Por confirmar* una punteada. Las hipótesis tienen probabilidad, razón y forma de verificarlas, y la persona puede marcarlas como confirmadas o descartadas. La página no afirma una causa que no conoce.
 
@@ -72,6 +72,7 @@ Usé tipografía editorial y más aire que en Olibia: aquí el objetivo es enten
 
 ## Herramientas y AI
 
+- Paleta basada en [bia.app](https://www.bia.app/): negro profundo, grises neutros, menta `#08DDBC` como acento de energía, violeta `#8B5CF6` para todo lo que viene de AI, ámbar `#F59E0B` para anomalías y el brillo azul eléctrico del hero de su sitio, reinterpretado en la cabecera de la experiencia Bia. Tipografía Inter, como en su sitio, con Geist Mono para etiquetas y ejes.
 - React 19, TypeScript, Vite, CSS con custom properties (sin framework de UI), SVG a mano.
 - Figma: foundations (variables de color, tipografía, espacio, radios) y componentes base.
 - Claude (Anthropic) como copiloto para estructurar el plan, generar código base de componentes y revisar consistencia, accesibilidad y textos.

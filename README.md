@@ -2,7 +2,7 @@
 
 Dos experiencias en React + TypeScript que comparten un mismo sistema de diseño (tokens, componentes y reglas de movimiento).
 
-- **Demo:** `https://<tu-proyecto>.vercel.app`
+- **Demo:** `https://bia-test-alpha.vercel.app/`
 - **Reto 01 · Olibia, pulso comercial:** `/#/olibia`
 - **Reto 02 · Bia, ¿por qué subió mi factura?:** `/#/bia`
 - Criterio de diseño ampliado: [`criterio.md`](./criterio.md)

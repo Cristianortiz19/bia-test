@@ -3,6 +3,7 @@
    Primitivos → semánticos. Cambiar la marca = cambiar primitivos.
    ========================================================================== */
 :root {
+  color-scheme: dark;
   /* Paleta basada en bia.app: negro profundo, grises neutros, menta #08DDBC,
      violeta #8B5CF6, ámbar #F59E0B y el brillo azul eléctrico del hero. */
   /* — Primitivos: color — */
@@ -34,42 +35,65 @@
   --sky-500: #2b5bff;   /* azul eléctrico del brillo de marca */
   --sky-100: #e3eaff;
 
-  /* — Semánticos — */
-  --bg: var(--paper-50);
-  --surface: var(--paper-0);
-  --surface-2: #fafbfc;
-  --surface-inverse: var(--ink-950);
-  --border: #e6e8ec;
-  --border-strong: #d1d5db;
-  --text: var(--ink-950);
-  --text-2: var(--ink-700);
-  --text-3: var(--ink-500);
-  --text-inverse: #f9fafb;
+  /* — Semánticos (tema oscuro, como bia.app) — */
+  --bg: #141416;
+  --night: #0c0c0e;          /* riel de navegación */
+  --surface: #1f1f23;        /* tarjetas: gris sin borde */
+  --surface-2: #27272c;      /* hover / elevado */
+  --surface-3: #303036;      /* controles sobre tarjeta */
+  --surface-inverse: #f4f6fa;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --track: rgba(255, 255, 255, 0.08);
+  --bar-muted: #3a3a41;
+  --text: #f5f5f7;
+  --text-2: #b4b4bd;
+  --text-3: #9a9aa4;   /* ≥4.5:1 sobre --surface y --surface-2 (WCAG AA) */
+  --text-inverse: #05070b;
+  --primary: #f4f6fa;        /* botones principales: píldora blanca como bia.app */
+  --on-primary: #05070b;
   --accent: var(--volt-500);
-  --accent-ink: var(--volt-700);
-  --accent-soft: var(--volt-100);
+  --accent-ink: #3ff2d6;
+  --accent-soft: rgba(8, 221, 188, 0.13);
+  --accent-glow: 0 0 0 transparent; /* sin bloom */
   --ai: var(--iris-500);
-  --ai-ink: var(--iris-600);
-  --ai-soft: var(--iris-100);
+  --ai-ink: #b69bff;
+  --ai-soft: rgba(139, 92, 246, 0.16);
   --warn: var(--ember-500);
-  --warn-ink: var(--ember-600);
-  --warn-soft: var(--ember-100);
+  --warn-ink: #fbbf24;
+  --warn-soft: rgba(245, 158, 11, 0.14);
   --info: var(--sky-500);
-  --info-soft: var(--sky-100);
-  --focus: var(--iris-500);
-  --glow: radial-gradient(120% 90% at 50% -10%, rgba(43, 91, 255, 0.55) 0%, rgba(43, 91, 255, 0.12) 45%, transparent 70%);
+  --info-soft: rgba(43, 91, 255, 0.18);
+  /* Estados de métrica: positivo / negativo (rojo) / neutro */
+  --status-pos: var(--volt-500);
+  --status-pos-ink: #3ff2d6;
+  --status-pos-soft: rgba(8, 221, 188, 0.13);
+  --status-neg: #ef4444;
+  --status-neg-ink: #fca5a5;
+  --status-neg-soft: rgba(239, 68, 68, 0.16);
+  --status-neutral: var(--text-2);
+  --status-neutral-soft: rgba(255, 255, 255, 0.07);
+  --focus: #3ff2d6;
+  --grad-accent: var(--accent); /* color sólido, sin degradados */
+  /* Tarjetas destacadas: fondo de color sólido de la paleta */
+  --hl-mint: #08ddbc;   --on-hl-mint: #04221d;
+  --hl-blue: #2b5bff;   --on-hl-blue: #ffffff;
+  --hl-violet: #8b5cf6; --on-hl-violet: #ffffff;
+  --hl-amber: #f5a524;  --on-hl-amber: #241703;
+  --stage-1: #2b8cff; --stage-2: #8b5cf6; --stage-3: #f5a524; --stage-4: #08ddbc;
+  --hatch: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 2px, transparent 2px 7px);
 
   /* data viz — categorías estables (no dependen del orden) */
-  --viz-1: var(--ink-950);
+  --viz-1: var(--volt-500);
   --viz-2: var(--iris-500);
-  --viz-3: var(--sky-500);
-  --viz-4: var(--volt-600);
-  --viz-muted: #e5e7eb;
+  --viz-3: #2b8cff;
+  --viz-4: var(--ember-500);
+  --viz-muted: var(--bar-muted);
 
   /* — Tipografía — */
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
-  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
 
   --fs-11: 0.6875rem;
   --fs-12: 0.75rem;
@@ -98,14 +122,17 @@
   /* — Forma — */
   --r-xs: 6px;
   --r-sm: 10px;
-  --r-md: 14px;
-  --r-lg: 20px;
-  --r-xl: 28px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 30px;
   --r-pill: 999px;
 
-  --shadow-1: 0 1px 0 rgba(14, 17, 22, 0.04), 0 1px 3px rgba(5, 7, 11, 0.06);
-  --shadow-2: 0 2px 4px rgba(14, 17, 22, 0.04), 0 12px 32px -8px rgba(14, 17, 22, 0.14);
-  --shadow-3: 0 24px 64px -16px rgba(14, 17, 22, 0.32);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.35), 0 16px 40px -12px rgba(0, 0, 0, 0.7);
+  --shadow-3: 0 30px 80px -20px rgba(0, 0, 0, 0.85);
+  /* tarjetas sin borde: sombra suave + filo de luz superior */
+  --shadow-card: none; /* sin stroke ni sombra: el gris separa */
+  --shadow-card-hover: none;
 
   /* — Movimiento — */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

@@ -46,7 +46,7 @@ La exploración ocurre en un **panel lateral** con anterior/siguiente, etapa en 
 
 Corregí un detalle de datos: el canal se calculaba según la posición de la fila, así que una empresa cambiaba de canal entre periodos. Ahora el canal es un atributo fijo de cada empresa.
 
-**Qué probar:** cambiar de periodo (los números se animan), clic en *Negociación* en el embudo, segmentos de *Origen*, la tecla `/` para buscar, ordenar columnas, flechas del detalle, deshacer en el toast, contraer el menú y el botón *Estados*.
+**Qué probar:** el selector de periodo (atajos o varios meses a la vez: los cierres y la meta se suman, el pipeline muestra cada oportunidad en su estado más reciente; también puedes hacer clic en una barra del histórico), clic en *Negociación* en el embudo, segmentos de *Origen*, la tecla `/` para buscar, ordenar columnas, flechas del detalle, deshacer en el toast, contraer el menú y el botón *Estados*.
 
 ## 02 · Bia: decisiones (≈230 palabras)
 
@@ -61,6 +61,14 @@ El cierre ofrece **un siguiente paso principal**: agendar una revisión nocturna
 Usé tipografía editorial y más aire que en Olibia: aquí el objetivo es entender, no monitorear.
 
 ---
+
+## Dirección visual
+
+Tema oscuro neutro, como bia.app. Las tarjetas son grises, sin borde ni sombra, con radios grandes. Tipografía Plus Jakarta Sans. El menú es un riel de íconos con tooltips y el ítem activo en un círculo blanco. Los filtros son tabs en píldora.
+
+No hay degradados de fondo ni brillos en las gráficas. Para destacar algo uso **tarjetas con fondo de color sólido de la paleta**, solo donde aporta: la meta en menta, el aviso del mes y la cabecera de Bia en azul, el resumen AI en violeta, la sede anómala en ámbar y la recomendación final en menta.
+
+En las gráficas, las barras de contexto van rayadas y las relevantes en color sólido: los meses seleccionados en Olibia y las horas nocturnas en Bia. Las etapas tienen un color propio que se repite en sus tarjetas y en las píldoras de estado de la tabla.
 
 ## Calidad transversal
 

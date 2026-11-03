@@ -5,20 +5,23 @@ import {
 import { IconCheckCircle, IconFlask, IconX } from './icons';
 
 /* ---------------------------------------------------------------- Tooltip */
-export type TipState = { x: number; y: number; content: ReactNode } | null;
+export type TipSide = 'top' | 'right';
+export type TipState = { x: number; y: number; content: ReactNode; side: TipSide } | null;
 
 export function useTooltip() {
   const [tip, setTip] = useState<TipState>(null);
-  const show = useCallback((el: Element, content: ReactNode) => {
+  const show = useCallback((el: Element, content: ReactNode, side: TipSide = 'top') => {
     const r = el.getBoundingClientRect();
-    setTip({ x: r.left + r.width / 2, y: r.top, content });
+    setTip(side === 'right'
+      ? { x: r.right + 12, y: r.top + r.height / 2, content, side }
+      : { x: r.left + r.width / 2, y: r.top, content, side });
   }, []);
   const hide = useCallback(() => setTip(null), []);
   /** props para elementos SVG/HTML: hover + foco (teclado) muestran el tooltip */
-  const bind = (content: ReactNode) => ({
-    onMouseEnter: (e: React.MouseEvent) => show(e.currentTarget, content),
+  const bind = (content: ReactNode, side: TipSide = 'top') => ({
+    onMouseEnter: (e: React.MouseEvent) => show(e.currentTarget, content, side),
     onMouseLeave: hide,
-    onFocus: (e: React.FocusEvent) => show(e.currentTarget, content),
+    onFocus: (e: React.FocusEvent) => show(e.currentTarget, content, side),
     onBlur: hide,
   });
   useEffect(() => {
@@ -28,7 +31,7 @@ export function useTooltip() {
     return () => window.removeEventListener('scroll', close, true);
   }, [tip]);
   const node = tip ? (
-    <div className="tooltip" role="tooltip" style={{ left: tip.x, top: tip.y }}>{tip.content}</div>
+    <div className={`tooltip ${tip.side === 'right' ? 'tooltip--right' : ''}`} role="tooltip" style={{ left: tip.x, top: tip.y }}>{tip.content}</div>
   ) : null;
   return { bind, node, hide };
 }

@@ -132,14 +132,14 @@ export function BiaApp() {
       </section>
 
       <nav className="bia-steps" aria-label="Recorrido">
-        {[['bia-where', '01', 'Dónde'], ['bia-when', '02', 'Cuándo'], ['bia-why', '03', 'Por qué'], ['bia-act', '04', 'Qué hacer']].map(([id, n, l]) => (
-          <button key={id} onClick={() => go(id)} aria-current={current === id ? 'true' : undefined}><span className="mono">{n}</span>{l}</button>
+        {[['bia-where', 'Dónde'], ['bia-when', 'Cuándo'], ['bia-why', 'Por qué'], ['bia-act', 'Qué hacer']].map(([id, l]) => (
+          <button key={id} onClick={() => go(id)} aria-current={current === id ? 'true' : undefined}>{l}</button>
         ))}
       </nav>
 
       {/* ============ 2. Dónde ============ */}
       <section id="bia-where" className="bia-sec" aria-labelledby="bia-where-h">
-        <SecHead n="01" id="bia-where-h" title="¿Dónde?" lead={`De los ${fmtInt(extraKwh)} kWh extra, ${fmtInt(hot.curr - hot.prev)} son de una sola sede.`} />
+        <SecHead id="bia-where-h" title="¿Dónde?" lead={`De los ${fmtInt(extraKwh)} kWh extra, ${fmtInt(hot.curr - hot.prev)} son de una sola sede.`} />
         {loading ? <div className="bia-sites">{[0, 1, 2].map((i) => <span key={i} className="skeleton" style={{ height: 180 }} />)}</div> : (<>
           <div className="bia-share" aria-hidden>
             {SITES.map((s) => (
@@ -171,7 +171,7 @@ export function BiaApp() {
 
       {/* ============ 3. Cuándo ============ */}
       <section id="bia-when" className="bia-sec" aria-labelledby="bia-when-h">
-        <SecHead n="02" id="bia-when-h" title={`¿Cuándo? · ${site.name}`}
+        <SecHead id="bia-when-h" title="¿Cuándo?" tag={site.name}
           lead={site.id === hot.id
             ? `Con el café cerrado (${OPEN_TO}:00 a ${OPEN_FROM}:00) ${site.name} pasó de ${fmtInt(site.offPrevPerHour * 10)} a ${fmtInt(site.offCurrPerHour * 10)} kWh por noche.`
             : `${site.name} consume casi igual que en septiembre; el aumento está dentro de lo normal.`} />
@@ -198,7 +198,7 @@ export function BiaApp() {
 
       {/* ============ 4. Por qué ============ */}
       <section id="bia-why" className="bia-sec" aria-labelledby="bia-why-h">
-        <SecHead n="03" id="bia-why-h" title="¿Por qué?" lead="Separamos lo que medimos de lo que todavía estamos suponiendo." />
+        <SecHead id="bia-why-h" title="¿Por qué?" lead="Separamos lo que medimos de lo que todavía estamos suponiendo." />
         <div className="bia-why">
           <article className="bia-card bia-known">
             <h3><Fact /> Lo que sabemos</h3>
@@ -241,7 +241,7 @@ export function BiaApp() {
 
       {/* ============ 5. Qué hacer ============ */}
       <section id="bia-act" className="bia-sec" aria-labelledby="bia-act-h">
-        <SecHead n="04" id="bia-act-h" title="¿Qué hago ahora?" lead={`Si se elimina el consumo nocturno en ${hot.name}, la factura bajaría cerca de ${fmtCOP(savings)} al mes.`} />
+        <SecHead id="bia-act-h" title="¿Qué hago ahora?" lead={`Si se elimina el consumo nocturno en ${hot.name}, la factura bajaría cerca de ${fmtCOP(savings)} al mes.`} />
         <div className="bia-act">
           <article className="bia-card bia-cta">
             <span className="badge badge--accent"><IconBolt size={12} /> Recomendado</span>
@@ -330,11 +330,13 @@ function Shell({ children, demo, setDemo }: { children: React.ReactNode; demo: D
   );
 }
 
-function SecHead({ n, id, title, lead }: { n: string; id: string; title: string; lead: string }) {
+function SecHead({ id, title, tag, lead }: { id: string; title: string; tag?: string; lead: string }) {
   return (
     <div className="bia-sec__head">
-      <span className="mono bia-sec__n">{n}</span>
-      <h2 id={id} className="display">{title}</h2>
+      <div className="bia-sec__title">
+        <h2 id={id} className="display">{title}</h2>
+        {tag && <span className="bia-sec__tag">{tag}</span>}
+      </div>
       <p>{lead}</p>
     </div>
   );
@@ -369,6 +371,12 @@ function DayChart({ siteId, compare, bind }: { siteId: SiteId; compare: boolean;
   return (
     <div className="bia-chart">
       <svg viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Consumo promedio por hora en ${site.name}, octubre frente a septiembre`}>
+        <defs>
+          <pattern id="bia-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="7" height="7" fill="#2b2b31" />
+            <line x1="0" y1="0" x2="0" y2="7" stroke="#5a5a64" strokeWidth="2.4" />
+          </pattern>
+        </defs>
         {/* bandas de cierre */}
         <rect x={xs(0)} y={pt - 14} width={bw * OPEN_FROM} height={ih + 14} className="bia-chart__night" />
         <rect x={xs(OPEN_TO)} y={pt - 14} width={bw * (24 - OPEN_TO)} height={ih + 14} className="bia-chart__night" />
@@ -390,7 +398,7 @@ function DayChart({ siteId, compare, bind }: { siteId: SiteId; compare: boolean;
               aria-label={`${h}:00, ${v.toFixed(1)} kWh en octubre, ${prev[h].toFixed(1)} en septiembre`}
               {...bind(<><strong>{String(h).padStart(2, '0')}:00 · {open ? 'Abierto' : 'Cerrado'}</strong><br />
                 <span className="muted">Oct {v.toFixed(1)} kWh · Sep {prev[h].toFixed(1)} kWh</span>
-                {Math.abs(d) > 0.05 && <><br /><span style={{ color: d > 0 ? '#fcd34d' : '#08ddbc' }}>{d > 0 ? '+' : ''}{d.toFixed(1)} kWh por hora</span></>}</>)}>
+                {Math.abs(d) > 0.05 && <><br /><span style={{ color: d > 0 ? '#b45309' : '#04776a', fontWeight: 600 }}>{d > 0 ? '+' : ''}{d.toFixed(1)} kWh por hora</span></>}</>)}>
               <rect x={xs(h)} y={pt} width={bw} height={ih} className="bia-chart__hit" />
               <rect x={xs(h) + 3} y={y(v)} width={bw - 6} height={pt + ih - y(v)} rx={4} className="bia-chart__bar"
                 style={{ transformOrigin: `0 ${pt + ih}px`, animationDelay: `${h * 14}ms` }} />

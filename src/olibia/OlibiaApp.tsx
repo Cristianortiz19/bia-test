@@ -20,7 +20,7 @@ type SortKey = 'value' | 'company' | 'next' | 'stage';
 type Done = Record<string, number>; // key periodo+id → timestamp
 
 const OWNER_HUE: Record<Owner, string> = {
-  'Ana López': '#8b5cf6', 'Carlos Ruiz': '#2b8cff', 'Laura Díaz': '#f59e0b', 'Mateo Gil': '#14b8a6',
+  'Ana López': '#a78bfa', 'Carlos Ruiz': '#2b8cff', 'Laura Díaz': '#f59e0b', 'Mateo Gil': '#14b8a6',
 };
 const STAGE_COLOR: Record<Stage, string> = { Contacto: 'var(--stage-1)', 'Calificación': 'var(--stage-2)', Propuesta: 'var(--stage-3)', 'Negociación': 'var(--stage-4)' };
 const CHANNEL_COLOR: Record<Channel, string> = { Outbound: 'var(--viz-1)', Referidos: 'var(--viz-2)', Inbound: 'var(--viz-3)' };
@@ -378,7 +378,7 @@ export function OlibiaApp() {
                     {filters.owner && <button className="ol-active__chip" onClick={() => set('owner', '')} aria-label={`Quitar responsable ${filters.owner}`}>{filters.owner} <IconX size={12} /></button>}
                     {filters.channel && <button className="ol-active__chip" onClick={() => set('channel', '')} aria-label={`Quitar canal ${filters.channel}`}>{filters.channel} <IconX size={12} /></button>}
                     {filters.minimum > 0 && <button className="ol-active__chip" onClick={() => set('minimum', 0)} aria-label="Quitar valor mínimo">≥ ${filters.minimum} M <IconX size={12} /></button>}
-                    <button className="ol-active__clear" onClick={clear}>Limpiar todo</button>
+                    <button className="ol-active__clear" onClick={clear}>Limpiar filtros</button>
                   </div>
                 )}
                 {isLoading ? (

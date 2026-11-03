@@ -16,11 +16,8 @@
   display: grid; gap: 28px; padding: clamp(32px, 6vw, 72px) clamp(20px, 5vw, 64px) clamp(28px, 5vw, 56px);
   border-radius: 36px; background: var(--night); color: var(--text); box-shadow: var(--shadow-card);
 }
-.bia-hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--glow); }
-.bia-hero::after { content: ''; position: absolute; z-index: -1; left: -10%; right: -10%; top: -88%; height: 100%; border-radius: 50%; border-bottom: 2px solid rgba(120, 150, 255, 0.55); filter: blur(1px); box-shadow: 0 30px 80px -20px rgba(43, 91, 255, 0.6); }
 .bia-hero .bia-eyebrow { color: var(--ink-400); }
 .bia-hero .bia-h1 em { color: var(--ink-400); }
-.bia-hero .skeleton { background: linear-gradient(90deg, #111827 0%, #1f2937 50%, #111827 100%); background-size: 200% 100%; }
 .bia-eyebrow { font-size: var(--fs-12); text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-3); }
 .bia-h1 { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.02; max-width: 16ch; max-width: 980px; }
 .bia-h1 em { color: var(--text-3); }
@@ -59,9 +56,7 @@
 .bia-steps { position: sticky; top: 64px; z-index: 20; justify-self: center; align-self: start; height: fit-content; display: flex; gap: 4px; padding: 4px; margin: -48px 0; background: rgba(14, 19, 27, 0.82); backdrop-filter: blur(12px); border-radius: var(--r-pill); box-shadow: var(--shadow-2); }
 .bia-steps button { display: flex; align-items: center; gap: 8px; height: 34px; padding: 0 14px; border: 0; border-radius: var(--r-pill); background: transparent; color: var(--ink-300); font-size: var(--fs-13); font-weight: 500; transition: background var(--d-fast), color var(--d-fast); }
 .bia-steps button:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
-.bia-steps .mono { font-size: 10px; color: var(--accent); }
 .bia-steps button[aria-current='true'] { background: var(--accent); color: var(--ink-950); }
-.bia-steps button[aria-current='true'] .mono { color: var(--ink-950); }
 
 /* ---------- Secciones ---------- */
 .bia-sec { display: grid; gap: 24px; scroll-margin-top: 120px; }
@@ -78,7 +73,7 @@
 /* dónde */
 .bia-share { display: flex; gap: 3px; height: 44px; border-radius: var(--r-pill); overflow: hidden; }
 .bia-share__seg { display: flex; align-items: center; padding: 0 16px; min-width: 64px; border-radius: 0; background: var(--bar-muted); font-size: var(--fs-13); animation: grow-x var(--d-slow) var(--ease-out) both; transform-origin: left; }
-.bia-share__seg.is-hot { background: linear-gradient(90deg, #f59e0b, #fbbf24); color: var(--on-primary);  }
+.bia-share__seg.is-hot { background: var(--warn); color: var(--on-primary); }
 @keyframes grow-x { from { transform: scaleX(0.3); opacity: 0; } }
 .bia-sites { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .bia-site {
@@ -87,8 +82,8 @@
   transition: border-color var(--d-base), transform var(--d-base) var(--ease-out), box-shadow var(--d-base);
 }
 .bia-site:hover { transform: translateY(-2px); box-shadow: var(--shadow-card-hover); }
-.bia-site.is-on { border-color: rgba(8, 221, 188, 0.6); box-shadow: var(--shadow-card); background: linear-gradient(165deg, rgba(8, 221, 188, 0.1), transparent 60%), var(--surface); }
-.bia-site.is-hot.is-on { border-color: rgba(245, 158, 11, 0.65); box-shadow: var(--shadow-card); background: linear-gradient(165deg, rgba(245, 158, 11, 0.12), transparent 60%), var(--surface); }
+.bia-site.is-on { border-color: rgba(8, 221, 188, 0.6); box-shadow: var(--shadow-card); background: var(--surface); }
+.bia-site.is-hot.is-on { border-color: rgba(245, 158, 11, 0.65); box-shadow: var(--shadow-card); background: var(--surface); }
 .bia-site__top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
 .bia-site__top > span:first-child { display: grid; }
 .bia-site__top strong { font-size: var(--fs-16); }
@@ -135,7 +130,7 @@
 .bia-chart__h:hover .bia-chart__hit, .bia-chart__h:focus-visible .bia-chart__hit { fill: rgba(139, 92, 246, 0.08); }
 .bia-chart__h:focus-visible .bia-chart__hit { stroke: var(--focus); stroke-width: 1.5; }
 .bia-chart svg:has(.bia-chart__h:hover) .bia-chart__h:not(:hover) .bia-chart__bar { opacity: 0.45; }
-.bia-callout { display: flex; gap: 12px; align-items: flex-start; margin-top: 16px; padding: 14px 16px; border-radius: var(--r-md); background: linear-gradient(90deg, rgba(245, 158, 11, 0.16), rgba(245, 158, 11, 0.03)); color: var(--text-2); font-size: var(--fs-14); }
+.bia-callout { display: flex; gap: 12px; align-items: flex-start; margin-top: 16px; padding: 14px 16px; border-radius: var(--r-md); background: rgba(245, 158, 11, 0.12); color: var(--text-2); font-size: var(--fs-14); }
 .bia-callout svg { color: var(--warn); flex: none; margin-top: 3px; }
 .bia-callout strong { color: #fff; }
 
@@ -145,7 +140,7 @@
 .bia-known li { padding-left: 22px; position: relative; color: var(--text-2); }
 .bia-known li::before { content: ''; position: absolute; left: 2px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);  }
 .bia-known li strong { color: var(--text); }
-.bia-unknown { border: 1.5px dashed rgba(245, 158, 11, 0.4); background: linear-gradient(165deg, rgba(245, 158, 11, 0.07), transparent 50%), var(--surface); }
+.bia-unknown { border: 1.5px dashed rgba(245, 158, 11, 0.4); background: var(--surface); }
 .bia-hyps { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
 .bia-hyp { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface-2); transition: opacity var(--d-base), border-color var(--d-base); }
 .bia-hyp.is-descartada { opacity: 0.6; }
@@ -166,7 +161,7 @@
 
 /* qué hacer */
 .bia-act { display: grid; grid-template-columns: 1.25fr 1fr; gap: 12px; align-items: start; }
-.bia-cta { background: radial-gradient(90% 80% at 100% 0%, rgba(8, 221, 188, 0.2), transparent 60%), radial-gradient(80% 80% at 0% 100%, rgba(43, 91, 255, 0.18), transparent 60%), var(--surface); color: var(--text); display: grid; gap: 14px; padding: 32px; }
+.bia-cta { background: var(--surface); color: var(--text); display: grid; gap: 14px; padding: 32px; }
 .bia-cta h3 { font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.05; font-weight: 400; margin: 0; }
 .bia-cta > .badge { justify-self: start; }
 .bia-cta > p { color: var(--ink-300); max-width: 460px; }
@@ -240,7 +235,6 @@
 
 /* Hero destacado en azul eléctrico de la marca */
 .bia-hero { background: var(--hl-blue); color: #fff; box-shadow: none; }
-.bia-hero::before, .bia-hero::after { display: none; }
 .bia-hero .bia-eyebrow { color: rgba(255, 255, 255, 0.92); }
 .bia-hero .bia-h1 em { color: rgba(255, 255, 255, 0.72); }
 .bia-hl { background: var(--hl-mint); color: var(--on-hl-mint); padding: 0 0.18em; border-radius: 0.22em; }
@@ -261,7 +255,6 @@
 
 .bia-steps { background: var(--surface); backdrop-filter: none; box-shadow: var(--shadow-2); }
 .bia-steps button[aria-current='true'] { background: #fff; color: #0c0c0e; }
-.bia-steps button[aria-current='true'] .mono { color: #0c0c0e; }
 
 /* Dónde: la sede que explica el aumento se destaca en ámbar */
 .bia-share__seg.is-hot { background: var(--hl-amber); color: var(--on-hl-amber); box-shadow: none; }

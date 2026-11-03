@@ -17,13 +17,10 @@
   transition: transform var(--d-base) var(--ease-out), box-shadow var(--d-base) var(--ease-out);
 }
 .home__card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
-.home__card::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: 0.9; background: radial-gradient(80% 70% at 100% 0%, rgba(139, 92, 246, 0.22), transparent 60%); transition: opacity var(--d-base); }
-.home__card--dark::before { background: radial-gradient(80% 70% at 100% 0%, rgba(8, 221, 188, 0.22), transparent 60%); }
 .home__card svg { color: var(--accent); }
 .home__card h2 { font-size: var(--fs-22); font-weight: 600; letter-spacing: -0.01em; margin-top: auto; }
 .home__card p { color: var(--text-2); max-width: 400px; }
 
-.home__num { position: absolute; top: 28px; right: 28px; font-size: var(--fs-12); opacity: 0.5; }
 .home__cta { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
 .home__cta svg { transition: transform var(--d-base) var(--ease-out); }
 .home__card:hover .home__cta svg { transform: translateX(4px); }

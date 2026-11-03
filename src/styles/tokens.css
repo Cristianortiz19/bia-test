@@ -78,9 +78,9 @@
   /* Tarjetas destacadas: fondo de color sólido de la paleta */
   --hl-mint: #08ddbc;   --on-hl-mint: #04221d;
   --hl-blue: #2b5bff;   --on-hl-blue: #ffffff;
-  --hl-violet: #8b5cf6; --on-hl-violet: #ffffff;
+  --hl-violet: #6d3fe0; --on-hl-violet: #ffffff;  /* ≥4.5:1 con texto blanco */
   --hl-amber: #f5a524;  --on-hl-amber: #241703;
-  --stage-1: #2b8cff; --stage-2: #8b5cf6; --stage-3: #f5a524; --stage-4: #08ddbc;
+  --stage-1: #2b8cff; --stage-2: #a78bfa; --stage-3: #f5a524; --stage-4: #08ddbc;
   --hatch: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 2px, transparent 2px 7px);
 
   /* data viz — categorías estables (no dependen del orden) */

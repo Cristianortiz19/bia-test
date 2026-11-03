@@ -153,12 +153,11 @@ img, svg { display: block; }
 
 /* ---------- Skeleton ---------- */
 .skeleton {
-  background: linear-gradient(90deg, #121821 0%, #1b2330 50%, #121821 100%);
-  background-size: 200% 100%;
-  animation: shimmer 1.2s linear infinite;
+  background: var(--surface-2);
+  animation: pulse-soft 1.2s var(--ease-in-out) infinite;
   border-radius: var(--r-xs);
 }
-@keyframes shimmer { to { background-position: -200% 0; } }
+@keyframes pulse-soft { 50% { opacity: 0.55; } }
 
 /* ---------- Drawer / dialog ---------- */
 .scrim {

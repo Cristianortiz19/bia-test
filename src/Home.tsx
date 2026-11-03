@@ -26,7 +26,7 @@ export function Home() {
           <span className="home__cta">Abrir experiencia <IconArrowRight size={16} /></span>
         </a>
       </nav>
-      <footer className="home__foot mono">React + TypeScript · Vite · datos ficticios · sin backend</footer>
+      <footer className="home__foot mono">React + TypeScript · Vite</footer>
     </main>
   );
 }

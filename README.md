@@ -36,19 +36,19 @@ Usé un router por hash, sin dependencias, para que la demo funcione en cualquie
 
 ---
 
-## 01 · Olibia: decisiones (≈220 palabras)
+## 01 · Olibia: decisiones
 
-El dashboard original mezclaba números del equipo (cierres) con números filtrables (pipeline) sin decir cuáles eran cuáles. La decisión principal fue **separar la pantalla en dos zonas con alcance explícito**. *Resultados del equipo* lleva una etiqueta que dice que no cambia con filtros. *Pipeline abierto* responde a todo lo que filtres y muestra cuántos filtros hay activos.
+El dashboard original mezclaba números del equipo con números filtrables sin decir cuáles eran cuáles. La decisión principal fue **separar la pantalla en dos zonas con alcance explícito**: *Resultados del equipo* dice que no cambia con filtros, y *Pipeline abierto* responde a todo lo que filtras y muestra cuántos filtros hay activos.
 
-Reemplacé el gráfico de barras por etapa por un **embudo de cuatro tarjetas que también es el filtro de etapa**: ver y filtrar ocurren en el mismo lugar. Los filtros pasaron de selects a chips de un clic. Los responsables aparecen como avatares con el mismo color en el filtro, el ranking, la tabla y el detalle. La meta se lee como un anillo (8 de 10), junto a un histórico con la línea de meta.
+El gráfico de barras por etapa se reemplazó por un **embudo de cuatro tarjetas que también es el filtro**: ver y filtrar ocurren en el mismo lugar. Los filtros son chips de un clic, y los responsables aparecen como avatares con el mismo color en el filtro, el ranking, la tabla y el detalle.
 
-La exploración ocurre en un **panel lateral** con anterior/siguiente, etapa en pasos, contacto y última nota. La acción, *marcar seguimiento*, pide una confirmación breve y deja **deshacer** desde el toast: una acción que se registra con un solo clic accidental no inspira confianza.
+La exploración ocurre en un **panel lateral** con anterior y siguiente. La acción *marcar seguimiento* pide una confirmación breve y deja **deshacer** en el aviso, porque un clic accidental no debe registrar nada sin poder volver atrás.
 
-Corregí un detalle de datos: el canal se calculaba según la posición de la fila, así que una empresa cambiaba de canal entre periodos. Ahora el canal es un atributo fijo de cada empresa.
+Corregí un detalle de datos: el canal se calculaba según la posición de la fila, así que una empresa cambiaba de canal entre periodos. Ahora es un atributo fijo de cada empresa.
 
-**Qué probar:** el selector de periodo (atajos o varios meses a la vez: los cierres y la meta se suman, el pipeline muestra cada oportunidad en su estado más reciente; también puedes hacer clic en una barra del histórico), clic en *Negociación* en el embudo, segmentos de *Origen*, la tecla `/` para buscar, ordenar columnas, flechas del detalle, deshacer en el toast, contraer el menú y el botón *Estados*.
+**Qué probar:** el selector de periodo (atajos o varios meses a la vez: cierres y meta se suman, y el pipeline muestra cada oportunidad en su estado más reciente), clic en una etapa del embudo, los segmentos de *Origen*, la tecla `/` para buscar, ordenar columnas, las flechas del detalle, deshacer en el aviso y el botón *Estados*.
 
-## 02 · Bia: decisiones (≈230 palabras)
+## 02 · Bia: decisiones
 
 La persona tiene pocos minutos y no sabe de energía. Por eso **la página empieza con la respuesta, no con un dashboard**: "Tu factura subió $1,2 M porque consumiste más, no porque la energía esté más cara". Debajo, un puente visual (septiembre + consumo extra + precio sin cambio = octubre) demuestra la frase sin pedir que se interprete un gráfico.
 
@@ -77,18 +77,25 @@ En las gráficas, las barras de contexto van rayadas y las relevantes en color s
 - **Movimiento reducido:** con `prefers-reduced-motion`, duraciones a 0 y contadores sin animación.
 - **Responsive:** menú tipo cajón en móvil, tabla convertida en tarjetas, panel de detalle como hoja inferior y gráfica horaria con desplazamiento.
 - **Estados:** carga (skeleton), vacío con salida (limpiar filtros), error con reintento.
+- **Contraste:** todos los textos cumplen WCAG AA (4,5:1 en texto normal), comprobados en ambas experiencias.
 
 ## Herramientas y AI
 
-- Paleta basada en [bia.app](https://www.bia.app/): negro profundo, grises neutros, menta `#08DDBC` como acento de energía, violeta `#8B5CF6` para todo lo que viene de AI, ámbar `#F59E0B` para anomalías y el brillo azul eléctrico del hero de su sitio, reinterpretado en la cabecera de la experiencia Bia. Tipografía Inter, como en su sitio, con Geist Mono para etiquetas y ejes.
+- Paleta basada en [bia.app](https://www.bia.app/): negro profundo, grises neutros, menta `#08DDBC` como acento de energía, violeta para todo lo que viene de AI (`#6D3FE0` en la tarjeta de resumen, para cumplir contraste con texto blanco), rojo `#EF4444` para métricas negativas, ámbar `#F59E0B` para anomalías y el brillo azul eléctrico del hero de su sitio, reinterpretado en la cabecera de la experiencia Bia. Tipografía Plus Jakarta Sans para la interfaz y Geist Mono para etiquetas y ejes.
 - React 19, TypeScript, Vite, CSS con custom properties (sin framework de UI), SVG a mano.
 - Figma: foundations (variables de color, tipografía, espacio, radios) y componentes base.
 - Claude (Anthropic) como copiloto para estructurar el plan, generar código base de componentes y revisar consistencia, accesibilidad y textos.
 
 ## Qué refiné personalmente
 
-> _Completa con tus propias palabras: dirección visual, ajustes de jerarquía, textos, microinteracciones, revisiones en móvil, etc._
+> _Mi enfoque fue primero entender qué necesita cada persona en cada pantalla, y después ajustar el diseño para que lo importante se vea primero. En ambas experiencias revisé la jerarquía tipográfica, el contraste, el espaciado y la forma en que se agrupan los datos, para que la lectura sea rápida y no dependa de interpretar gráficas._
+
+> _En usabilidad, cuidé que las acciones se entiendan sin tener que adivinar: los filtros muestran cuáles están activos y cómo limpiarlos, los estados de carga, vacío y error están pensados, y los controles importantes siempre son visibles, sin depender del cursor. Traté de que cada elemento tenga un solo significado visual: los colores de estado indican información, no decoración._
+
+> _Para el sistema visual, definí tokens de color, tipografía y forma, y los apliqué de forma consistente en las dos experiencias. Eliminé sombras, bordes y brillos innecesarios, y reservé el color sólido para lo que necesita destacarse. Revisé el contraste de los textos contra criterios WCAG AA y ajusté los que no cumplían._
+
+> _Probé las pantallas en escritorio y en móvil, y revisé el comportamiento de las gráficas al cambiar el tamaño de la ventana, para que mantengan sus proporciones y su legibilidad._
 
 ## Tiempo dedicado
 
-> _Completa con el tiempo real._
+> _Completado en 4 horas._
